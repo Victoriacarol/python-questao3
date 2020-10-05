@@ -1,23 +1,16 @@
 # python-questao3
 #include <stdio.h> 
  
-void main() { 
-  float nota1, nota2,  media; 
- 
-  printf("Informe a 1a. nota:\n"); 
-  scanf("%f", ¬a1); 
- 
-  printf("\nInforme a 2a. nota:\n"); 
-  scanf("%f", ¬a2);
- 
+nota1 = float(input('primeira nota: '))
+ nota2= float(input('segunda nota: '))
   media = (nota1 + nota2 ) / 2; 
  
-  printf("\nMedia final = %.2f", media); 
+   print("tirando {:.1f} e {:.1f}, a média do aluno é {:.1f}'.format(nota1, nota2, média)) 
  
-  if (media >= 7.0) 
-     printf(" (aluno aprovado)."); 
-  else if ((media >= 5.0) && (media < 7.0)) 
-          printf(" (aluno em recuperacao)."); 
-       else 
-   printf(" (aluno reprovado).");
-   }
+  if 7 > média >= 5:
+  print('O aluno está em RECUPERAÇÃO.')
+  elif média < 5:
+  print('O aluno está REPROVADO.')
+  elif média >= 7:
+  print('O aluno está APROVADO.')
+     
